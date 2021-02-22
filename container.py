@@ -24,9 +24,16 @@ class Container(ABC):
         """
         return self.size() == 0
 
-    @abstractmethod
     def push(self, item):
-        """Push items into list"""
+        """
+        Push items into list
+        :param item:
+        :return: None
+        """
+        self._items.append(item)
+
+    def __str__(self):
+        return str(self._items)
 
     @abstractmethod
     def pop(self):

@@ -5,7 +5,7 @@ class Stack(Container):
 
     def peek(self):
         """
-
+        Find last item in stack.
         :return:
         """
         assert not self.is_empty()
